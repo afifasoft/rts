@@ -1,4 +1,4 @@
-import { UserSearch } from './components/user/userSearch';
+import { UserSearch } from './components/refs';
 import Parent from './props/Parent';
 import { GuestList } from './state';
 import { PieChart } from './lib/components/charts/piechart';

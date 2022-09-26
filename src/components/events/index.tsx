@@ -7,8 +7,11 @@ export const EventComponent = () => {
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         console.log(event);
     }
+    const onDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+        console.log(event);
+    }
      return <div>
             <input  onChange={onChange}/>
-            <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)}/>
+            <div draggable onDragStart={onDragStart}>Drag me!</div>
         </div>
 }
